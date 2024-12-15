@@ -12,3 +12,40 @@ function getRandomHexColor() {
     .toString(16)
     .padStart(6, 0)}`;
 }
+
+const createBtn = document.querySelector("[data-create]");
+const destroyBtn = document.querySelector("[data-destroy]");
+
+function createBoxes(amount) {
+  const boxCollection = document.querySelector("#boxes");
+  const number = document.getElementsByTagName("input")[0];
+  const amountNew = Number(number.value);
+  //amount.preventDefault();
+  boxCollection.innerHTML = "";
+
+  for (let i = 1; i <= amountNew; i++) {
+    const newBox = document.createElement("div");
+    const size = 30 + i * 10;
+    newBox.style.width = `${size}px`;
+    newBox.style.height = `${size}px`;
+    newBox.style.backgroundColor = getRandomHexColor();
+    boxCollection.append(newBox);
+  }
+
+  document.getElementsByTagName("input")[0].value = "";
+}
+
+function destroyBoxes() {
+  const boxCollection = document.querySelector("#boxes");
+  boxCollection.innerHTML = "";
+}
+
+//createBtn.addEventListener("click", createBoxes);
+createBtn.addEventListener("click", () => {
+  const number = document.getElementsByTagName("input")[0];
+  const amountNew = Number(number.value);
+  if (amountNew > 0 && amountNew < 101) {
+    createBoxes(amountNew);
+  }
+});
+destroyBtn.addEventListener("click", destroyBoxes);
