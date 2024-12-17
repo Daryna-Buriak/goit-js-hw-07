@@ -83,10 +83,24 @@ img {
 
 /*Task 2*/
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 23px;
+  row-gap: 23px;
+  padding: 5%;
+}
+
 .gallery-item {
+  width: calc((100% - 48px) / 3);
 }
 
 .gallery-img {
+  display: block;
+  width: 100%;
 }
 
 /*Task 3*/
