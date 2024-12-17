@@ -15,6 +15,14 @@ body {
   width: 100%;
 }
 
+button {
+  all: unset;
+}
+
+button:focus {
+  outline: revert;
+}
+
 ul {
   list-style-type: none;
   margin: 0 0 0 0;
@@ -127,3 +135,48 @@ img {
 }
 
 /*Task 4*/
+
+.input-title {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.input-style {
+  width: 360px;
+  border-radius: 5px;
+  border-color: #808080;
+  border-width: 1px;
+  border-style: solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.email-login {
+  display: block;
+  margin-bottom: 5px;
+}
+.password {
+  display: block;
+}
+
+.login {
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  width: 86px;
+  height: 40px;
+  border-radius: 9px;
+  text-align: center;
+}
+
+/*Task 5*/
+/*Task 6*/
