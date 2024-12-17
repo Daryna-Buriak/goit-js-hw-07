@@ -46,6 +46,17 @@ img {
   display: block;
 }
 
+.bttn-style {
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border-radius: 9px;
+  text-align: center;
+}
+
 /*Task 1*/
 
 .item-title {
@@ -166,17 +177,30 @@ img {
 }
 
 .login {
-  background: #4e75ff;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.04em;
-  color: #fff;
   width: 86px;
   height: 40px;
-  border-radius: 9px;
-  text-align: center;
 }
 
 /*Task 5*/
+
+.widget {
+  display: content-box;
+  text-align: center;
+  background: #fff;
+  width: 40%;
+  height: auto;
+  margin: auto;
+  border-radius: 9px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.widget-title {
+}
+
+.change-color {
+  width: 148px;
+  height: 40px;
+}
+
 /*Task 6*/
