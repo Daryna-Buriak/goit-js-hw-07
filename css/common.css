@@ -57,6 +57,10 @@ img {
   text-align: center;
 }
 
+.bttn-style:hover {
+  background: #6c8cff;
+}
+
 /*Task 1*/
 
 .item-title {
@@ -137,6 +141,10 @@ img {
   margin-bottom: 10px;
 }
 
+.name-input:hover {
+  border-color: #575656;
+}
+
 .name-input::placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -166,6 +174,10 @@ img {
   padding-bottom: 10px;
   padding-left: 10px;
   margin-bottom: 10px;
+}
+
+.input-style:hover {
+  border-color: #575656;
 }
 
 .email-login {
@@ -226,6 +238,10 @@ img {
   margin-right: 15px;
 }
 
+.input-number:hover {
+  border-color: #575656;
+}
+
 .create-bttn {
   width: 120px;
   height: 40px;
@@ -236,6 +252,10 @@ img {
   width: 120px;
   height: 40px;
   background: #ff4e4e;
+}
+
+.destroy-bttn:hover {
+  background: #ff7070;
 }
 
 .boxes-container {
