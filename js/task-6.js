@@ -20,8 +20,9 @@ function createBoxes(amount) {
   const boxCollection = document.querySelector("#boxes");
   const number = document.getElementsByTagName("input")[0];
   const amountNew = Number(number.value);
-  //amount.preventDefault();
   boxCollection.innerHTML = "";
+
+  const divElements = [];
 
   for (let i = 1; i <= amountNew; i++) {
     const newBox = document.createElement("div");
@@ -29,8 +30,10 @@ function createBoxes(amount) {
     newBox.style.width = `${size}px`;
     newBox.style.height = `${size}px`;
     newBox.style.backgroundColor = getRandomHexColor();
-    boxCollection.append(newBox);
+    divElements.push(newBox);
   }
+
+  boxCollection.append(...divElements);
 
   document.getElementsByTagName("input")[0].value = "";
 }
@@ -40,7 +43,6 @@ function destroyBoxes() {
   boxCollection.innerHTML = "";
 }
 
-//createBtn.addEventListener("click", createBoxes);
 createBtn.addEventListener("click", () => {
   const number = document.getElementsByTagName("input")[0];
   const amountNew = Number(number.value);
